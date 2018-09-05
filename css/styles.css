@@ -1,0 +1,76 @@
+body {
+  background: #eee;
+}
+
+#canvas {
+  background: #fff;
+}
+
+#container {
+  width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  margin: 4px;
+}
+
+.colorbtn {
+  width: 38px;
+  height: 38px;
+  margin: 4px;
+}
+
+#dnld {
+  text-decoration: none;
+  color: black;
+}
+
+#yellow {
+  background: yellow;
+}
+
+#orange {
+  background: orange;
+}
+
+#lightgreen {
+  background: lightgreen;
+}
+
+#green {
+  background: green;
+}
+
+#skyblue {
+  background: skyblue;
+}
+
+#blue {
+  background: blue;
+}
+
+#purple {
+  background: purple;
+}
+
+#red {
+  background: red;
+}
+
+#brown {
+  background: brown;
+}
+
+#black {
+  background: black;
+}
+
+#grey {
+  background: grey;
+}
+
+#white {
+  background: white;
+}
