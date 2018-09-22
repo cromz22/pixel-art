@@ -10,6 +10,14 @@
 <body>
   <div id="container">
     <p>
+      <button><a class="btn">Load existing image</a></button>
+    </p>
+    <p>
+      <input type="button" class="btn" id="wb" value="Set white background">
+      <input type="button" class="btn" id="bb" value="Set black background">
+      (Default background is transparent)
+    </p>
+    <p>
       <input type="button" class="colorbtn" id="yellow">
       <input type="button" class="colorbtn" id="orange">
       <input type="button" class="colorbtn" id="lightgreen">
@@ -23,12 +31,12 @@
       <input type="button" class="colorbtn" id="grey">
       <input type="button" class="colorbtn" id="white">
     </p>
-    <canvas id="canvas" width="640" height="480"></canvas>
+    <canvas id="canvas"></canvas>
     <p>
-      <input type="button" class="btn" id="clear" value="Clear" />
+      <input type="button" class="btn" id="clear" value="Clear canvas">
     </p>
     <p>
-      <button><a href="#" class="btn" id="dnld" download="0.jpg">Download</a></button>
+      <button><a class="btn" id="dnld">Download image as png</a></button>
     </p>
   </div>
   <script src="js/main.js"></script>
