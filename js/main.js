@@ -29,16 +29,6 @@
   canvas.height = csHeight;
 
 /* 関数宣言 */
-// set background color
-  function set_white() {
-    ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, csWidth, csHeight);
-  }
-  function set_black() {
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, csWidth, csHeight);
-  }
-
 // color change button
   function change_color(color) {
     box_color = color;
@@ -58,7 +48,9 @@
 
 // clear
   function clear_canvas() {
-    ctx.clearRect(0, 0, csWidth, csHeight);
+    //ctx.clearRect(0, 0, csWidth, csHeight);
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, csWidth, csHeight);
   }
 
 // download
@@ -77,8 +69,8 @@
   }
 
 /* 実行 */
-  wb.addEventListener('click', set_white, false);
-  bb.addEventListener('click', set_black, false);
+
+  canvas.onload = clear_canvas();
 
   document.getElementById("yellow").addEventListener('click', function() { change_color("yellow"); }, false);
   document.getElementById("orange").addEventListener('click', function() { change_color("orange"); }, false);
